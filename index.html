@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Books Library</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <div class="header">
     <h1>My Books Library App</h1>
+    <button id="add-book-btn">Add Book</button>
+    </div>
+
+    <div id="book-form" style="display: none;">
+        <h3>Add a new book</h3>
+        <input type="text" id="title" placeholder="Title"><br>
+        <input type="text" id="author" placeholder="Author"><br>
+        <label for="status">Status:</label>
+        <select id="status">
+            <option value="Reading">Reading</option>
+            <option value="Next Read">Next Read</option>
+            <option value="To read">To read</option>
+            <option value="Read">Read</option>
+        </select><br>
+        <button id="save-book-btn">Save Book</button>
+    </div>
+
+    <div id="my-library-list"></div>
+
 </body>
 </html>
